@@ -21,7 +21,6 @@
           v-model="newTodo"
         />
         <button class="add" id="add" @click="addNewTodo">Add</button>
-
       </div>
       <div class="flexbox filter-items">
         <h2>Filter & Options</h2>
@@ -43,7 +42,7 @@
       <div class="remove flexbox">
         <button class="delete" id="btn-delete">Remove Done Todos</button>
       </div>
-      <div class="flexbox todo" >
+      <div class="flexbox todo">
         <h2>Your Todos</h2>
         <ul id="li-todo" class="ul2">
           <li class="li2" v-for="todo of todos">
@@ -53,13 +52,14 @@
               :checked="todo.done"
               :id="'todo-${todo.id}'"
             />
-            <label for="list-1"></label>
-            {{ todo.description }}
+            <label for="list-1">{{ todo.description }}</label>
+            
           </li>
         </ul>
       </div>
     </main>
     <script src="https://unpkg.com/vue@next%22%3E</script>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    
   </body>
 </html>

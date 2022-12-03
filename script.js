@@ -9,12 +9,12 @@ Vue.createApp({
           done: false,
         },
         {
-          id: 1,
+          id: 2,
           description: "CSS lernen",
           done: false,
         },
         {
-          id: 1,
+          id: 3,
           description: "Vue.js lernen",
           done: false,
         },
