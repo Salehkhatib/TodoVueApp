@@ -38,5 +38,8 @@ Vue.createApp({
         return todo.done !== true;
       });
     },
+    resetInput() {
+      this.newTodo = "";
+    },
   },
 }).mount("#app");

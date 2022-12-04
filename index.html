@@ -19,6 +19,7 @@
           class="description"
           id="new-todo"
           v-model="newTodo"
+          @click="resetInput"
         />
         <button class="add" @click="addNewTodo">Add</button>
       </div>
