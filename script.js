@@ -29,5 +29,14 @@ Vue.createApp({
         done: false,
       });
     },
+    changeDoneState(id) {
+      const currentTodo = this.todos.find((todo) => todo.id === id);
+      currentTodo.done = !currentTodo.done;
+    },
+    deleteAllDone() {
+      this.todos = this.todos.filter((todo) => {
+        return todo.done !== true;
+      });
+    },
   },
 }).mount("#app");
