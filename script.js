@@ -28,6 +28,7 @@ Vue.createApp({
         description: this.newTodo,
         done: false,
       });
+      this.resetInput();
     },
     changeDoneState(id) {
       const currentTodo = this.todos.find((todo) => todo.id === id);
